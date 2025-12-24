@@ -17,7 +17,23 @@
     </style>
 </head>
 <body>
-    <header class="pt-12 pb-16 px-6 bg-white text-center">
+
+    <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 py-4 px-6">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3 hover:opacity-90 transition">
+                <img src="logo.svg" alt="OpsDBA Logo" class="h-8 w-auto">
+                <span class="text-xl font-bold tracking-tight text-slate-900">OpsDBA<span class="text-blue-600">.ai</span></span>
+            </a>
+            
+            <div class="flex items-center gap-6 md:gap-10">
+                <a href="#pricing" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Pricing</a>
+                <a href="mailto:corey.klessig@opsdba.ai" class="hidden md:block text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Contact</a>
+                <a href="mailto:corey.klessig@opsdba.ai" class="bg-slate-900 text-white px-5 py-2 rounded-full text-xs font-bold hover:bg-blue-600 transition tracking-wide">Get Started</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="pt-16 pb-16 px-6 bg-white text-center">
         <div class="max-w-4xl mx-auto">
             <div class="inline-block px-4 py-1 mb-6 rounded-full border border-blue-100 bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase">
                 From Firefighting to Strategic Oversight
@@ -29,7 +45,7 @@
             </h1>
             
             <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Expert DBA oversight, enhanced by AI. We monitor, stabilize, and tune your SQL Server environment so you don’t have to.  Your Operational SQL Server DBA without the overhead of a full-time hire.
+                Expert DBA oversight, enhanced by AI. We monitor, stabilize, and tune your SQL Server environment so you don’t have to. Your Operational SQL Server DBA without the overhead of a full-time hire.
             </p>
         </div>
     </header>
@@ -56,7 +72,7 @@
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-white">
+    <section id="pricing" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Compare Plans and Pricing</h2>
