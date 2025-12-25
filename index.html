@@ -52,27 +52,59 @@
         </div>
     </header>
 
-    <section class="pb-20 px-6 bg-white">
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition duration-300">
-                <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm">01</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Automated Optimization</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Detects inefficient queries and analyzes workload patterns to ensure peak performance.</p>
-            </div>
-
-            <div class="p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-md transition duration-300">
-                <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm">02</div>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Proactive Monitoring</h3>
-                <p class="text-slate-500 text-sm leading-relaxed">Predict potential storage bottlenecks or resource exhaustion before failures occur.</p>
-            </div>
-
-            <div class="p-8 rounded-3xl border-2 border-dashed border-blue-200 bg-blue-50/30 flex flex-col justify-center">
-                <span class="text-blue-600 font-bold text-[10px] uppercase tracking-widest mb-2">Real-Time Decision Making</span>
-                <h3 class="text-xl font-bold text-slate-900 mb-2">Agentic Capabilities</h3>
-                <p class="text-slate-500 text-xs">Intelligent agents working alongside your team for specialized oversight.</p>
-            </div>
+<section class="pb-20 px-6 bg-white">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <div class="group p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-blue-200 transition-all duration-300">
+            <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">01</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Data Collection</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Real-time detection of 823, 824, and 825 consistency errors. We monitor for corruption and unusual database states before they impact availability.
+            </p>
         </div>
-    </section>
+
+        <div class="group p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-blue-200 transition-all duration-300">
+            <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">02</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Summary Reporting</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Identifies critical "Poison Waits," deadlocks, and memory pressure. We optimize MAXDOP, cost thresholds, and memory nodes for peak throughput.
+            </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-blue-200 transition-all duration-300">
+            <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">03</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Alert Monitoring</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Continuous oversight of Full, Differential, and Log backups. We ensure TDE certificates are secured and recovery models align with your RPO.
+            </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-blue-200 transition-all duration-300">
+            <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">04</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Audit Reporting</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Detection of non-SARGable predicates, implicit conversions, and missing index requests to eliminate hidden performance bottlenecks.
+            </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border border-slate-100 bg-white shadow-sm hover:shadow-xl hover:-translate-y-2 hover:border-blue-200 transition-all duration-300">
+            <div class="h-10 w-10 ai-gradient rounded-lg mb-4 flex items-center justify-center text-white font-bold text-sm group-hover:scale-110 transition-transform duration-300">05</div>
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-blue-600 transition-colors">Security & Patching</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">
+                Shields your environment from dangerous builds with known corruption bugs or security vulnerabilities. We keep your SQL instance current and compliant.
+            </p>
+        </div>
+
+        <div class="group p-8 rounded-3xl border-2 border-dashed border-blue-200 bg-blue-50/30 flex flex-col justify-center hover:bg-blue-50 hover:border-blue-400 hover:-translate-y-2 transition-all duration-300 shadow-sm hover:shadow-lg">
+            <span class="text-blue-600 font-bold text-[10px] uppercase tracking-widest mb-2 group-hover:tracking-[0.15em] transition-all">A.I. ENHANCED</span>
+            <h3 class="text-xl font-bold text-slate-900 mb-2">SQL Server DBA Support</h3>
+            <p class="text-slate-500 text-xs">
+                Beyond monitoring: Our agents manage TempDB placement, CPU schedulers, and Instant File Initialization to stabilize your core infrastructure.
+            </p>
+        </div>
+
+    </div>
+</section>
 
     <section id="pricing" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
@@ -175,6 +207,8 @@
         Note: Response SLAs apply to the notification of the event. Remediation effort is prioritized based on your selected service tier.
     </p>
 </div>
+
+
 </section>
 
     <footer class="bg-white border-t border-slate-100 pt-3 pb-3 px-3">
