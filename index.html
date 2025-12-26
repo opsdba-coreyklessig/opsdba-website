@@ -10,17 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-    
     <style>
         body { font-family: 'Inter', sans-serif; background-color: #ffffff; margin: 0; padding: 0; overflow-x: hidden; }
         .ai-gradient { background: linear-gradient(135deg, #70a1d7 0%, #3b82f6 100%); }
         /* Smooth scrolling for internal links */
         html { scroll-behavior: smooth; }
-        
-
-        
     </style>
 </head>
+
 <body>
 
 <nav class="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100 py-4 px-6">
@@ -36,22 +33,14 @@
     </div>
 </nav>
 
-    <header class="pt-16 pb-16 px-6 bg-white text-center">
-        <div class="max-w-4xl mx-auto">
-            <div class="inline-block px-4 py-1 mb-6 rounded-full border border-blue-100 bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase">
-                From Firefighting to Strategic Oversight
-            </div>
-            
-            <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">
-                Operational SQL Server DBA Support <br>
-                <span class="text-transparent bg-clip-text ai-gradient">Enhanced with AI</span>
-            </h1>
-            
-            <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
-                Expert DBA oversight, enhanced by AI. We monitor, stabilize, and tune your SQL Server environment so you don’t have to. Your Operational SQL Server DBA without the overhead of a full-time hire.
-            </p>
-        </div>
-    </header>
+<header class="pt-16 pb-16 px-6 bg-white text-center">
+    <div class="max-w-4xl mx-auto">
+        <div class="inline-block px-4 py-1 mb-6 rounded-full border border-blue-100 bg-blue-50 text-blue-600 text-xs font-bold tracking-widest uppercase">From Firefighting to Strategic Oversight
+        </div>     
+        <h1 class="text-4xl md:text-6xl font-bold text-slate-900 mb-6 tracking-tight">Operational SQL Server DBA Support <br><span class="text-transparent bg-clip-text ai-gradient">Enhanced with AI</span></h1>
+        <p class="text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">Expert DBA oversight, enhanced by AI. We monitor, stabilize, and tune your SQL Server environment so you don’t have to. Your Operational SQL Server DBA without the overhead of a full-time hire.</p>
+    </div>
+</header>
 
 <section class="pb-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -108,7 +97,7 @@
     </div>
 </section>
 
-    <section id="pricing" class="py-20 px-6 bg-white">
+<section id="pricing" class="py-20 px-6 bg-white">
     <div class="max-w-6xl mx-auto">
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-5xl font-bold text-slate-900 mb-4">Service Tiers and Pricing</h2>
@@ -203,36 +192,61 @@
 
 <div class="mt-6 p-8 md:p-6 max-w-6xl mx-auto bg-slate-100 rounded-3xl border border-slate-200">
     <h3 class="text-xs font-bold text-slate-900 uppercase tracking-widest mb-4">
-        * Monitoring & Notification Scope
+        * Alert Monitoring & Notification
     </h3>
     
     <p class="text-sm text-slate-600 leading-relaxed mb-6">
-        The <strong>OpsDBA Support Notification Operator</strong> provides reactive alerting to critical engine events. Our automation monitors and triggers notifications for:
+        Monitoring real-time 'vital signs' within the SQL Server engine, we intercept potential failures before they impact your business, eliminating the delay between system warnings and expert DBA intervention.
     </p>
 
     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
         <div class="flex items-start gap-3">
             <span class="text-emerald-600 font-bold mt-0.5">✔</span>
+            
             <div class="text-sm text-slate-600">
-                <strong class="text-slate-900">Backup Failures:</strong> Immediate alerting on Full, Differential, or Log backup interruptions.
+                <strong class="text-slate-900">Critical Engine Errors: </strong>Monitoring Severity 17-25 to catch fatal engine failures and resource exaustion.
+                <ul class="space-y-1 text-xs font-medium text-slate-500 border-l-2 border-slate-200 pl-3 mt-3">
+                    <li><span class="text-slate-800">Sev 17:</span> Insufficient Resources</li>
+                    <li><span class="text-slate-800">Sev 18:</span> Software Errors</li>
+                    <li><span class="text-slate-800">Sev 19-21:</span> Fatal Process Errors</li>
+                    <li><span class="text-slate-800">Sev 22-25:</span> Integrity & Hardware Failure</li>
+                </ul>
             </div>
         </div>
         <div class="flex items-start gap-3">
             <span class="text-emerald-600 font-bold mt-0.5">✔</span>
             <div class="text-sm text-slate-600">
-                <strong class="text-slate-900">Severity Alerts (17-25):</strong> Real-time capture of hardware, resource, and fatal database errors.
+                <strong class="text-slate-900">Corruption & I/O: </strong>Detecting "Silent Killers" like disk retries and memory corruptions early.
+                <ul class="space-y-1 text-xs font-medium text-slate-500 border-l-2 border-slate-200 pl-3 mt-3">
+                    <li><span class="text-slate-800">823 / 824:</span> Hard I/O & Logical Consistency</li>
+                    <li><span class="text-slate-800">825:</span> Read Retry (Critical Early Warning)</li>
+                    <li><span class="text-slate-800">832:</span> Constant Memory Corruption Checks</li>
+                    <li><span class="text-slate-800">845:</span> I/O Subsystem & Driver Health</li>
+                </ul>
             </div>
         </div>
         <div class="flex items-start gap-3">
             <span class="text-emerald-600 font-bold mt-0.5">✔</span>
             <div class="text-sm text-slate-600">
-                <strong class="text-slate-900">Corruption Events:</strong> Automated detection of 823, 824, and 825 read/write consistency errors.
+                <strong class="text-slate-900">Capacity & Operations: </strong>Ensuring the database has room to breathe and backups are secure.
+               <ul class="space-y-1 text-xs font-medium text-slate-500 border-l-2 border-slate-200 pl-3 mt-3">
+                    <li><span class="text-slate-800">1105 / 9002:</span> Data & Log File Capacity</li>
+                    <li><span class="text-slate-800">3201:</span> Instant Backup Failure Alerting</li>
+                    <li><span class="text-slate-800">1480:</span> AG Role Changes & Failover Events</li>
+                    <li><span class="text-slate-800">Jobs:</span> Monitoring of all critical SQL Agent jobs</li>
+                </ul>
             </div>
         </div>
         <div class="flex items-start gap-3">
             <span class="text-emerald-600 font-bold mt-0.5">✔</span>
             <div class="text-sm text-slate-600">
-                <strong class="text-slate-900">Job Failures:</strong> Monitoring of all critical SQL Agent jobs.
+                <strong class="text-slate-900">Concurrency & Logic: </strong>Tracking deadlocks and timeouts that degrade the user experience.
+                <ul class="space-y-1 text-xs font-medium text-slate-500 border-l-2 border-slate-200 pl-3 mt-3">
+                    <li><span class="text-slate-800">1205:</span> Deadlock Event Capture</li>
+                    <li><span class="text-slate-800">1222:</span> Lock Request Timeout Detection</li>
+                    <li><span class="text-slate-800">21414/15:</span> Application Lock Failures</li>
+                    <li><span class="text-slate-800">20531:</span> Non-Logged System Shutdowns</li>
+                </ul>
             </div>
         </div>
     </div>
@@ -243,23 +257,20 @@
         </p>
     </div>
 </div>
-
-
 </section>
-
-    <footer class="bg-white border-t border-slate-100 pt-3 pb-3 px-3">
+    
+<footer class="bg-white border-t border-slate-100 pt-3 pb-3 px-3">
         <div class="max-w-6xl mx-auto">
             <div class="flex flex-col md:flex-row justify-between items-start md:items-center mb-3 gap-6">
                 <div>
                     <a href="#" class="flex items-center gap-1 mb-3">
                         <span class="text-2xl font-extrabold tracking-tighter text-slate-900">OpsDBA<span class="text-blue-600">.ai</span></span>
                     </a>
-                    <p class="text-slate-500 text-sm max-w-xs">Beyond Monitoring: Proactive SQL Support through Expert AI Oversight.</p>
+                    <p class="text-slate-500 text-sm max-w-xs">Beyond Monitoring: Proactive SQL DBA Support</p>
                 </div>
 
                 <div class="flex gap-4">
                     <a href="#pricing" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Pricing</a>
-                    <a href="mailto:support@opsdba.ai" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Support</a>
                     <a href="mailto:support@opsdba.ai" class="text-sm font-semibold text-slate-600 hover:text-blue-600 transition">Contact</a>
                 </div>
             </div>
@@ -274,7 +285,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+</footer>
 
 </body>
+
 </html>
